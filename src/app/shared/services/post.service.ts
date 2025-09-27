@@ -3,7 +3,9 @@ import { Ipost } from "../models/posts";
 
 
 
-@Injectable()
+@Injectable({
+  providedIn :'root'
+})
   
 
   

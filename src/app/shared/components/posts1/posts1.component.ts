@@ -10,13 +10,17 @@ import { postService } from '../../services/post.service';
 export class Posts1Component implements OnInit {    
      postsArr :Array <Ipost> = []
   
- postsService= new postService()
+  // postsService= new postService()
 
-  constructor( ) { }
+  constructor(private _postsService:postService ) { }
 
   ngOnInit(): void {
 
-   this.postsArr=  this.postsService.fetchAllposts()
+   this.postsArr=  this._postsService.fetchAllposts()
   }
+
+   onLastPostremove(){
+    this.postsArr.pop()
+   }
 
 }

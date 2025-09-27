@@ -1,0 +1,26 @@
+  
+ 
+
+ <div class="container mt-5">
+
+
+ <ul class="list-group">
+    <li  *ngFor="let todo of todosArr"
+    
+    class="list-group-item d-flex justify-content-between">
+
+     <strong> {{todo.todoItem}}</strong>
+
+
+      <div>
+        <button class="btn btn-sm btn-outline-info mr-2">Edit</button>
+
+        <button class="btn btn-sm btn-outline-danger">Remove</button>
+      </div>
+
+    </li>
+   </ul>
+
+
+ </div>
+  
